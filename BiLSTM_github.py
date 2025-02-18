@@ -77,20 +77,6 @@ from matplotlib import ticker
 # import cv2
 from sklearn.preprocessing import MinMaxScaler
 
-plt.rcParams.update({
-    'font.size': 18,
-    'axes.labelsize': 18,
-    'axes.titlesize': 18,
-    'xtick.labelsize': 17,
-    'ytick.labelsize': 17,
-    'legend.fontsize': 16,
-    'figure.figsize': [12, 8],  # width, height in inches
-    'axes.grid': True,
-    'lines.linewidth': 3.5,
-    'lines.markersize': 13,
-    'figure.subplot.wspace': 0.5,
-})
-
 #####################################
 # make variable types for automatic setting to GPU or CPU, depending on GPU availability
 use_cuda = torch.cuda.is_available()
