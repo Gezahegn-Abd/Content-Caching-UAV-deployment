@@ -44,21 +44,6 @@ np.random.seed(100)
 import matlab.engine
 
 # set default parameters
-plt.rcParams.update({
-    'font.size': 19,
-    'axes.labelsize': 19,
-    'axes.titlesize': 19,
-    'xtick.labelsize': 18,
-    'ytick.labelsize': 18,
-    'legend.fontsize': 16,
-    'figure.figsize': [10, 8],  # width, height in inches
-    'axes.grid': False,
-    'lines.linewidth': 4,
-    'lines.markersize': 13,
-    'figure.subplot.wspace': 0.5,
-})
-
-
 def calculate_hit_rate(topk_movies_per_group, testing_data):
     hit_count = 0
     for i in range(testing_data.shape[0]):
